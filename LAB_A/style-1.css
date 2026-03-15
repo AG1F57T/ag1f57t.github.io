@@ -1,3 +1,99 @@
 body {
-  background-color: #dfecff;
+    font-size: 18px;
+    padding: 40px;
+    background-image: url('assets/stone_brick.jpg');
+    background-repeat: repeat;
+    background-size: auto;
+    color: black;
+    font-family: 'Orbitron', sans-serif;
+  }
+  div {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  #styled-header{
+    font-family: 'Press Start 2P', cursive;
+    font-size: 60px;
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  #styled-footer{
+    text-align: center;
+  }
+  #main-container{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+  }
+  p {
+    font-size: 16px;
+  }
+
+  #main-photo{
+    width: 70vh;
+    float: left;
+    border: 1px solid #1a1a1a;
+    margin-right: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+
+  #head-text{
+    text-align: center;
+  }
+
+  li::marker {
+    color: #7e7e7e;
+  }
+a {
+  color: black;
+  text-decoration: none;
 }
+a:hover {
+  color: red;
+}
+
+#logo{
+  width: 100px;
+  float: left;
+  position: relative;
+}
+
+@media (max-width: 375px) {
+  body {
+    font-size: 14px;
+    padding: 10px;
+    color: #121212;
+  }
+  #styled-header{
+    font-family: 'Press Start 2P', cursive;
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+    text-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  #styleToggle {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  p {
+    font-size: 12px;
+  }
+  #main-photo{
+    width: 40vh;
+    margin-bottom: 20px;
+  }
+}
+
