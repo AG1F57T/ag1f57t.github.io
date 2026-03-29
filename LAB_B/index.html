@@ -3,12 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Imie Nazwisko (00000) - PTW LAB B</title>
+    <title>Wojciech Kucharczyk (57780) - PTW LAB B</title>
 
     <link rel="stylesheet" href="styles.css" type="text/css">
     <script src="scripts.js" defer></script>
 </head>
 <body>
-
+<h1>Lista zadań</h1>
+<input type="text" id="search-input" placeholder="Szukaj...">
+<ul id="task-list">
+</ul>
+<input type="text" id="new-task-input" placeholder="Nowe zadanie..." maxlength="255">
+<input type="datetime-local" id="new-task-date">
+<button id="add-btn">Dodaj zadanie</button>
+<p id="error-msg"></p>
+<script src="scripts.js"></script>
 </body>
 </html>
