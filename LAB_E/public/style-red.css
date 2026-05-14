@@ -1,0 +1,142 @@
+@import url(https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Orbitron:wght@500;700;900&display=swap);
+
+body {
+    background-color: #000712;
+    background-image:
+            linear-gradient(#1b1b1b 1px, transparent 1px),
+            linear-gradient(90deg, #1b1b1b 1px, transparent 1px);
+    background-size: 40px 40px;
+    color: white;
+    margin: 0;
+}
+
+header {
+    background-color: #000f20;
+    border-bottom: 1px solid white;
+    padding: 10px;
+    width: 100%;
+    position: fixed;
+    margin-top: 0;
+    top: 0;
+    z-index: 1000;
+}
+
+#styled-header {
+    display: inline-block;
+    background: linear-gradient(to right, #cc0022, #ff4455);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-family: 'Press Start 2P', cursive;
+}
+
+#main-container {
+    margin: 120px;
+    background: radial-gradient(circle, #000712, #000f20);
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+h1#head-text {
+    text-align: center;
+    text-shadow: 0 0 10px #ff4455;
+    color: #ff4455;
+    font-family: 'Press Start 2P', cursive;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid rgba(255, 68, 85, 0.5);
+}
+
+h2 {
+    font-family: 'Press Start 2P', cursive;
+    color: #cc0022;
+    text-shadow: 0 0 5px #cc0022;
+    font-size: 15px;
+}
+
+#main-photo {
+    width: 30%;
+    justify-content: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #ff4455;
+    box-shadow: 0 0 10px rgba(255, 68, 85, 0.5);
+}
+
+p {
+    font-family: 'Orbitron', sans-serif;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+li {
+    padding: 6px 12px;
+    border-left: 3px solid #ff4455;
+    margin-bottom: 6px;
+    color: #ff4455;
+    text-shadow: 0 0 10px rgba(255, 68, 85, 0.6);
+}
+
+footer {
+    justify-content: center;
+    text-align: center;
+}
+
+#styled-footer a {
+    color: #ff4455;
+    text-decoration: none;
+}
+
+#styled-footer a:hover {
+    color: #cc0022;
+}
+
+@media (max-width: 375px) {
+
+    body {
+        font-size: 10px;
+    }
+
+    header {
+        width: 100%;
+        top: 0;
+        margin-top: 0;
+        padding: 10px 0;
+        text-align: center;
+        position: fixed;
+    }
+
+    #styled-header {
+
+    }
+
+    #main-container {
+        margin: 120px auto;
+        background: radial-gradient(circle, #000712, #000f20);
+        padding: 40px;
+        max-width: 600px;
+    }
+
+
+    h1#head-text {
+        font-size: 10px;
+    }
+
+    h2 {
+        font-size: 10px;
+    }
+
+    #main-photo {
+        width: 100%;
+    }
+
+    hr{
+        margin: 20px 0;
+    }
+}
