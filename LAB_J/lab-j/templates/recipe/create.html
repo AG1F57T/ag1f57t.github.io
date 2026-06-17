@@ -1,0 +1,14 @@
+{% extends 'layout.html' %}
+
+{% block title %}Create Recipe{% endblock %}
+{% block body_class %}edit{% endblock %}
+
+{% block main %}
+    <h1>Create Recipe</h1>
+
+    <form action="{{ url_for('recipe_create') }}" method="post" class="edit-form">
+        {% include 'recipe/_form.html' %}
+    </form>
+
+    <a href="{{ url_for('recipe_index') }}">Back to list</a>
+{% endblock %}

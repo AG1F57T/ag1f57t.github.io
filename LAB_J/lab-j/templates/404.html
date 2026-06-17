@@ -1,0 +1,9 @@
+{% extends 'layout.html' %}
+
+{% block title %}404 Not Found{% endblock %}
+{% block body_class %}{% endblock %}
+
+{% block main %}
+    <h1>404 – Not Found</h1>
+    <a href="{{ url_for('recipe_index') }}">Back to list</a>
+{% endblock %}

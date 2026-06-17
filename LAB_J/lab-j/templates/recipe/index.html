@@ -1,0 +1,22 @@
+{% extends 'layout.html' %}
+
+{% block title %}Recipe List{% endblock %}
+{% block body_class %}index{% endblock %}
+
+{% block main %}
+    <h1>Recipes List</h1>
+
+    <a href="{{ url_for('recipe_create') }}">Create new</a>
+
+    <ul class="index-list">
+        {% for recipe in recipes %}
+            <li>
+                <h3>{{ recipe['name'] }}</h3>
+                <ul class="action-list">
+                    <li><a href="{{ url_for('recipe_show', recipe_id=recipe['id']) }}">Details</a></li>
+                    <li><a href="{{ url_for('recipe_edit', recipe_id=recipe['id']) }}">Edit</a></li>
+                </ul>
+            </li>
+        {% endfor %}
+    </ul>
+{% endblock %}
