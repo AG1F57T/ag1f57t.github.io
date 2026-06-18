@@ -1,0 +1,9 @@
+{
+  "electron": {
+    "mac": {
+      "package": [
+        "zip"
+      ]
+    }
+  }
+}
